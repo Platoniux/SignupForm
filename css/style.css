@@ -48,10 +48,13 @@ body {
 
 /*header*/
 .header {
-	margin: 48px 0 15px  41px;
+	max-width: 347px;
+	width: 100%;
+	margin: 0 auto;
 	font-size: 22px;
 	font-weight: 400;
 	color: #949494;
+	margin-bottom: 15px;
 }
 
 .bold_word {
@@ -62,12 +65,13 @@ body {
 
 /*common for text_forms*/
 .internal_form {
-	width: 347px;
+	max-width: 347px;
+	width: 100%;
+	margin: 0 auto;
 	padding: 29px 27px 15px 27px;
 	background-color: #ffffff;
 	border-radius: 5px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.2);
-	margin: 16px 43px 85px 43px;
 }
 .fname,
 .lname,
@@ -138,30 +142,21 @@ body {
 /*end of placeholders*/
 
 /*img*/
-.container.man,
-.container.lock {
-	position: relative;
+
+.container__uname {
+	background: url(../img/man.png) no-repeat;
+	background-position: 97% 50%;
+	background-color: #f0f0f0;
+	padding-right: 35px;
 }
 
-.container.man::after {
-	content: '';
-	position: absolute;
-	background-image: url(https://raw.githubusercontent.com/Platoniux/SignupForm/master/img/man.png);
-	width: 23px;
-	height: 25px;
-	left: 260px;
-	top: 55px;
+.container__passw {
+	background: url(../img/lock.png) no-repeat;
+	background-position: 97% 50%;
+	background-color: #f0f0f0;
+	padding-right: 35px;
 }
 
-.container.lock:after {
-	content: '';
-	position: absolute;
-	background-image: url(https://raw.githubusercontent.com/Platoniux/SignupForm/master/img/lock.png);
-	width: 15px;
-	height: 19px;
-	left: 265px;
-	top: 7px;
-}
 /*end of img*/
 
 /*checkbox*/
@@ -195,11 +190,11 @@ body {
     background-color: #eee;
     border-radius: 2px;
 }
-.check__label:hover .check__box ~ .checkmark {
+.check__label:hover .check__box + .checkmark {
     background-color: #ccc;
 }
-.check__label .check__box:checked ~ .checkmark {
-    background-image: url(https://raw.githubusercontent.com/Platoniux/SignupForm/master/img/checked.png);
+.check__label .check__box:checked + .checkmark {
+    background-image: url(../img/checked.png);
     background-color: #eee;
 }
 
@@ -213,8 +208,7 @@ body {
 }
 
 .btn__signup {
-	height: 35px;
-	width: 95px;
+	line-height: 35px;
 	font-weight: bold;
 	color: #ffffff;
 	background-color: #fea15d;
