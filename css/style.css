@@ -146,7 +146,7 @@ body {
 .container.man::after {
 	content: '';
 	position: absolute;
-	background-image: url(https://raw.githubusercontent.com/Platoniux/SignupForm/master/img/man.png);
+	background-image: url(../img/man.png);
 	width: 23px;
 	height: 25px;
 	left: 260px;
@@ -156,7 +156,7 @@ body {
 .container.lock:after {
 	content: '';
 	position: absolute;
-	background-image: url(https://raw.githubusercontent.com/Platoniux/SignupForm/master/img/lock.png);
+	background-image: url(../img/lock.png);
 	width: 15px;
 	height: 19px;
 	left: 265px;
@@ -199,7 +199,7 @@ body {
     background-color: #ccc;
 }
 .check__label .check__box:checked ~ .checkmark {
-    background-image: url(https://raw.githubusercontent.com/Platoniux/SignupForm/master/img/checked.png);
+    background-image: url(../img/checked.png);
     background-color: #eee;
 }
 
