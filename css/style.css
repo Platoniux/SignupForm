@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Krub:400,700');
+/*normalize CSS*/
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body,
+p {
+	margin: 0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit; 
+	font-size: 100%; 
+	line-height: 1.15; 
+	margin: 0;
+	border-width: 0;
+}
+
+/*end of normalize CSS*/
+
+/*common style*/
+
+body {
+	font-family: Krub, sans-serif;
+	background-color: #f7f7f7;
+}
+
+.external_form {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/*end of common style*/
+
+/*header*/
+.header {
+	margin: 48px 0 15px  41px;
+	font-size: 22px;
+	font-weight: 400;
+	color: #949494;
+}
+
+.bold_word {
+	font-weight: bold;
+}
+
+/*end of header*/
+
+/*common for text_forms*/
+.internal_form {
+	width: 347px;
+	padding: 29px 27px 15px 27px;
+	background-color: #ffffff;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	margin: 16px 43px 85px 43px;
+}
+.fname,
+.lname,
+.container {
+	margin-bottom: 14px;
+}
+
+.fname,
+.lname  {
+	display: inline-block;
+}
+
+.lname {
+	margin-left: 13px;
+}
+
+.fname__input,
+.lname__input,
+.container__uname, 
+.container__email,
+.container__passw {
+	background-color: #f0f0f0;
+	border-radius: 5px;
+	height: 35px;
+	padding: 10px;
+}
+
+.fname__input,
+.lname__input {
+	width: 137px;
+}
+
+.container__uname, 
+.container__email,
+.container__passw {
+	width: 292px;
+}
+
+.container.lock {
+	margin-bottom: 7px;
+}
+/* end of common for text_form*/
+
+/* placeholders */
+::-webkit-input-placeholder {
+	color: #b7b7b7;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+::-moz-placeholder {
+	color: #b7b7b7;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+:-moz-placeholder {
+	color: #b7b7b7;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+:-ms-input-placeholder {
+	color: #b7b7b7;
+	font-size: 14px;
+	font-weight: bold;
+}
+/*end of placeholders*/
+
+/*img*/
+.container.man,
+.container.lock {
+	position: relative;
+}
+
+.container.man::after {
+	content: '';
+	position: absolute;
+	background-image: url(../img/man.png);
+	width: 23px;
+	height: 25px;
+	left: 260px;
+	top: 55px;
+}
+
+.container.lock:after {
+	content: '';
+	position: absolute;
+	background-image: url(../img/lock.png);
+	width: 15px;
+	height: 19px;
+	left: 265px;
+	top: 7px;
+}
+/*end of img*/
+
+/*checkbox*/
+.check__legend {
+	color: #b7b7b7;
+	font-size: 11px;
+}
+.check__label {
+	display: block;
+    position: relative;
+    padding-left: 15px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.check__box {
+	position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 13px;
+    width: 11px;
+    background-color: #eee;
+    border-radius: 2px;
+}
+.check__label:hover .check__box ~ .checkmark {
+    background-color: #ccc;
+}
+.check__label .check__box:checked ~ .checkmark {
+    background-image: url(../img/checked.png);
+    background-color: #eee;
+}
+
+/*end of checkbox*/
+
+/*button*/
+
+.btn {
+	text-align: center;
+	margin: 15px 0 22px 0;
+}
+
+.btn__signup {
+	height: 35px;
+	width: 95px;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #fea15d;
+	cursor: pointer;
+	border-radius: 5px;
+	-webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}
+.btn__signup:hover {
+	background-color: #ff5c33;
+}
+
+/*end of button*/
+
+/*footer*/
+
+.footer {
+	text-align: center;
+	font-size: 11px;
+	color: #b7b7b7;
+}
+
+.link {
+	text-decoration: none;
+	font-weight: bold;
+	color: #b7b7b7;
+}
+.info {
+	display: inline-block;
+	white-space: nowrap; 
+	width: 135px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+/*end of foooter*/
+
+/*bold for some words*/
+.bold_word {
+	font-weight: bold;
+}
+/*end of bold*/
